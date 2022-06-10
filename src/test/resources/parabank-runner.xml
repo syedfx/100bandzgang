@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="amazon smoke amazon">
+<suite name="Para Bank Testing">
     <parameter name="url" value="https://parabank.parasoft.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
@@ -69,18 +69,6 @@
     <test name="FindTransactionsPageAndLogout">
         <classes>
             <class name="apps.parabank.FindTransactionsPageAndLogout"/>
-        </classes>
-    </test>
-
-    <test name="ForgotLoginInfoPage">
-        <classes>
-            <class name="apps.parabank.ForgotLoginInfoPage"/>
-        </classes>
-    </test>
-
-    <test name="ForgotLoginInfoPageAndLogout">
-        <classes>
-            <class name="apps.parabank.ForgotLoginInfoPageAndLogout"/>
         </classes>
     </test>
 
@@ -243,6 +231,18 @@
     <test name="WithdrawFundsPage">
         <classes>
             <class name="apps.parabank.WithdrawFundsPage"/>
+        </classes>
+    </test>
+
+    <test name="ForgotLoginInfoPage">
+        <classes>
+            <class name="apps.parabank.ForgotLoginInfoPage"/>
+        </classes>
+    </test>
+
+    <test name="ForgotLoginInfoPageAndLogout">
+        <classes>
+            <class name="apps.parabank.ForgotLoginInfoPageAndLogout"/>
         </classes>
     </test>
 

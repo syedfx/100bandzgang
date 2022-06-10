@@ -22,6 +22,6 @@ public class RegisterAndLogout extends CommonAPI {
         driver.findElement(By.cssSelector("input[id='customer.password']")).sendKeys("lalala0");
         driver.findElement(By.cssSelector("input[id='repeatedPassword']")).sendKeys("lalala0");
         driver.findElement(By.xpath("//*[@id=\"customerForm\"]/table/tbody/tr[13]/td[2]/input")).click();
-        driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[8]/a")).click();
+        //driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[8]/a")).click();
     }
 }

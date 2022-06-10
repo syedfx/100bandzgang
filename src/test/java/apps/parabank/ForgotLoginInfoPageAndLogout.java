@@ -18,6 +18,6 @@ public class ForgotLoginInfoPageAndLogout extends CommonAPI {
         driver.findElement(By.xpath("//*[@id=\"address.zipCode\"]")).sendKeys("12345");
         driver.findElement(By.xpath("//*[@id=\"ssn\"]")).sendKeys("333445555");
         driver.findElement(By.xpath("//*[@id=\"lookupForm\"]/table/tbody/tr[8]/td[2]/input")).click();
-        driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[8]/a")).click();
+        //driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[8]/a")).click();
     }
 }
