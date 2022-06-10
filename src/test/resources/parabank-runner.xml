@@ -1,15 +1,249 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="opencart smoke opencart">
-    <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm/"></parameter>
+<suite name="amazon smoke amazon">
+    <parameter name="url" value="https://parabank.parasoft.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
-    <!--    <test name="HomepageTest opencart">-->
-    <!--        <classes>-->
-    <!--            <class name="apps.HomepageTest.parabank"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="AboutParaBank">
+        <classes>
+            <class name="apps.parabank.About"/>
+        </classes>
+    </test>
 
+    <test name="AccountHistory">
+        <classes>
+            <class name="apps.parabank.AccountHistory"/>
+        </classes>
+    </test>
+
+    <test name="AccountsOverview">
+        <classes>
+            <class name="apps.parabank.AccountsOverview"/>
+        </classes>
+    </test>
+
+    <test name="AdminPage">
+        <classes>
+            <class name="apps.parabank.AdminPage"/>
+        </classes>
+    </test>
+
+    <test name="BillPay">
+        <classes>
+            <class name="apps.parabank.BillPay"/>
+        </classes>
+    </test>
+
+    <test name="CheckBalances">
+        <classes>
+            <class name="apps.parabank.CheckBalances"/>
+        </classes>
+    </test>
+
+    <test name="ContactUs">
+        <classes>
+            <class name="apps.parabank.ContactUs"/>
+        </classes>
+    </test>
+
+    <test name="FindTransactionsPage">
+        <classes>
+            <class name="apps.parabank.FindTransactionsPage"/>
+        </classes>
+    </test>
+
+    <test name="FindTransactionsPageAndLogout">
+        <classes>
+            <class name="apps.parabank.FindTransactionsPageAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="ForgotLoginInfoPage">
+        <classes>
+            <class name="apps.parabank.ForgotLoginInfoPage"/>
+        </classes>
+    </test>
+
+    <test name="ForgotLoginInfoPageAndLogout">
+        <classes>
+            <class name="apps.parabank.ForgotLoginInfoPageAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="Locations">
+        <classes>
+            <class name="apps.parabank.Locations"/>
+        </classes>
+    </test>
+
+    <test name="MakeDeposits">
+        <classes>
+            <class name="apps.parabank.MakeDeposits"/>
+        </classes>
+    </test>
+
+    <test name="OpenNewAccountPage">
+        <classes>
+            <class name="apps.parabank.OpenNewAccountPage"/>
+        </classes>
+    </test>
+
+    <test name="OpenNewAccountPageAndLogout">
+        <classes>
+            <class name="apps.parabank.OpenNewAccountPageAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="ReadMePage1">
+        <classes>
+            <class name="apps.parabank.ReadMePage1"/>
+        </classes>
+    </test>
+
+    <test name="ReadMePage2">
+        <classes>
+            <class name="apps.parabank.ReadMePage2"/>
+        </classes>
+    </test>
+
+    <test name="Register">
+        <classes>
+            <class name="apps.parabank.Register"/>
+        </classes>
+    </test>
+
+    <test name="RegisterAndLogout">
+        <classes>
+            <class name="apps.parabank.RegisterAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="TitleTest">
+        <classes>
+            <class name="apps.parabank.TitleTest"/>
+        </classes>
+    </test>
+
+    <test name="TransferFunds">
+        <classes>
+            <class name="apps.parabank.TransferFunds"/>
+        </classes>
+    </test>
+
+    <test name="UpdateContactInfoPage">
+        <classes>
+            <class name="apps.parabank.UpdateContactInfoPage"/>
+        </classes>
+    </test>
+
+    <test name="UpdateContactInfoPageAndLogout">
+        <classes>
+            <class name="apps.parabank.UpdateContactInfoPageAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="UserAppAboutButton">
+        <classes>
+            <class name="apps.parabank.UserAppAboutButton"/>
+        </classes>
+    </test>
+
+    <test name="UserBillPayPage">
+        <classes>
+            <class name="apps.parabank.UserBillPayPage"/>
+        </classes>
+    </test>
+
+    <test name="UserBillPayTest">
+        <classes>
+            <class name="apps.parabank.UserBillPayTest"/>
+        </classes>
+    </test>
+
+    <test name="UserCustomerCareButton">
+        <classes>
+            <class name="apps.parabank.UserCustomerCareButton"/>
+        </classes>
+    </test>
+
+    <test name="UserHomeButton">
+        <classes>
+            <class name="apps.parabank.UserHomeButton"/>
+        </classes>
+    </test>
+
+    <test name="UserLogin">
+        <classes>
+            <class name="apps.parabank.UserLogin"/>
+        </classes>
+    </test>
+
+    <test name="UserLogout">
+        <classes>
+            <class name="apps.parabank.UserLogout"/>
+        </classes>
+    </test>
+
+    <test name="UserRequestLoanAndLogout">
+        <classes>
+            <class name="apps.parabank.UserRequestLoanAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="UserRequestLoanPage">
+        <classes>
+            <class name="apps.parabank.UserRequestLoanPage"/>
+        </classes>
+    </test>
+
+    <test name="UserRequestLoanTest">
+        <classes>
+            <class name="apps.parabank.UserRequestLoanTest"/>
+        </classes>
+    </test>
+
+    <test name="UserTransferFunds">
+        <classes>
+            <class name="apps.parabank.UserTransferFunds"/>
+        </classes>
+    </test>
+
+    <test name="UserTransferFundsTest">
+        <classes>
+            <class name="apps.parabank.UserTransferFundsTest"/>
+        </classes>
+    </test>
+
+    <test name="UserTransfersFundsAndLogout">
+        <classes>
+            <class name="apps.parabank.UserTransfersFundsAndLogout"/>
+        </classes>
+    </test>
+
+    <test name="UserUpdateContactInfoTest1">
+        <classes>
+            <class name="apps.parabank.UserUpdateContactInfoTest1"/>
+        </classes>
+    </test>
+
+    <test name="UserUpdateContactInfoTest2">
+        <classes>
+            <class name="apps.parabank.UserUpdateContactInfoTest2"/>
+        </classes>
+    </test>
+
+    <test name="UserUpdateContactInfoTest3">
+        <classes>
+            <class name="apps.parabank.UserUpdateContactInfoTest3"/>
+        </classes>
+    </test>
+
+    <test name="WithdrawFundsPage">
+        <classes>
+            <class name="apps.parabank.WithdrawFundsPage"/>
+        </classes>
+    </test>
 
 </suite>
+
