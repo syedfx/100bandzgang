@@ -5,6 +5,19 @@
     <parameter name="url" value="https://parabank.parasoft.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
+
+    <test name="Register">
+        <classes>
+            <class name="apps.parabank.Register"/>
+        </classes>
+    </test>
+
+    <test name="RegisterAndLogout">
+        <classes>
+            <class name="apps.parabank.RegisterAndLogout"/>
+        </classes>
+    </test>
+
     <test name="AboutParaBank">
         <classes>
             <class name="apps.parabank.About"/>
@@ -104,18 +117,6 @@
     <test name="ReadMePage2">
         <classes>
             <class name="apps.parabank.ReadMePage2"/>
-        </classes>
-    </test>
-
-    <test name="Register">
-        <classes>
-            <class name="apps.parabank.Register"/>
-        </classes>
-    </test>
-
-    <test name="RegisterAndLogout">
-        <classes>
-            <class name="apps.parabank.RegisterAndLogout"/>
         </classes>
     </test>
 
