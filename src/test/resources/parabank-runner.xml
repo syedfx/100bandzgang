@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="opencart smoke opencart">
+    <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm/"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <!--    <test name="HomepageTest opencart">-->
+    <!--        <classes>-->
+    <!--            <class name="apps.HomepageTest.parabank"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+
+</suite>
