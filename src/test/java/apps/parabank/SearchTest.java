@@ -1,4 +1,6 @@
 package apps.parabank;
 
-public class SearchTest {
+import base.CommonAPI;
+
+public class SearchTest extends CommonAPI {
 }
