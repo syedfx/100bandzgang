@@ -7,6 +7,14 @@
     <parameter name="os" value="windows"></parameter>
 
 
+    <test name="CreateAccountTest petstore">
+        <classes>
+            <class name="apps.petstore.CreateAccountTest"/>
+        </classes>
+    </test>
+
+
+
     <test name="AddMoreSearchItemsTest petstore">
         <classes>
             <class name="apps.petstore.AddMoreSearchItemsTest"/>
@@ -49,11 +57,6 @@
         </classes>
     </test>
 
-    <test name="CreateAccountTest petstore">
-        <classes>
-            <class name="apps.petstore.CreateAccountTest"/>
-        </classes>
-    </test>
 
     <test name="DogPage petstore">
         <classes>
