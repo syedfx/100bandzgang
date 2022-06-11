@@ -252,268 +252,268 @@
         </classes>
     </test>
 
-    <test name="LessPlasticWasteArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.LessPlasticWasteArticle"/>
-        </classes>
-    </test>
+<!--    <test name="LessPlasticWasteArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.LessPlasticWasteArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="LogInTest proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.LogInTest"/>
-        </classes>
-    </test>
+<!--    <test name="LogInTest proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.LogInTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="MatthewMinistriesSetAsMyCause proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.MatthewMinistriesSetAsMyCause"/>
-        </classes>
-    </test>
+<!--    <test name="MatthewMinistriesSetAsMyCause proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.MatthewMinistriesSetAsMyCause"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="MeasureOfGreatnessVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.MeasureOfGreatnessVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="MeasureOfGreatnessVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.MeasureOfGreatnessVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="MotherOfForestsVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.MotherOfForestsVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="MotherOfForestsVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.MotherOfForestsVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="NativeAmericanQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.NativeAmericanQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="NativeAmericanQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.NativeAmericanQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="NavigatingToProfile proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.NavigatingToProfile"/>
-        </classes>
-    </test>
+<!--    <test name="NavigatingToProfile proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.NavigatingToProfile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="NewPaperPackagingArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.NewPaperPackagingArticle"/>
-        </classes>
-    </test>
+<!--    <test name="NewPaperPackagingArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.NewPaperPackagingArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="NewsStoryDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.NewsStoryDonation"/>
-        </classes>
-    </test>
+<!--    <test name="NewsStoryDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.NewsStoryDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="OlympicsQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.OlympicsQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="OlympicsQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.OlympicsQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="OperationHomeFrontPage proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.OperationHomeFrontPage"/>
-        </classes>
-    </test>
+<!--    <test name="OperationHomeFrontPage proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.OperationHomeFrontPage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="OralCareDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.OralCareDonation"/>
-        </classes>
-    </test>
+<!--    <test name="OralCareDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.OralCareDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PampersCausePage proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PampersCausePage"/>
-        </classes>
-    </test>
+<!--    <test name="PampersCausePage proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PampersCausePage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PartOfRecyclingArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PartOfRecyclingArticle"/>
-        </classes>
-    </test>
+<!--    <test name="PartOfRecyclingArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PartOfRecyclingArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PastorRudyVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PastorRudyVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="PastorRudyVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PastorRudyVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PeriodProtectionDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PeriodProtectionDonation"/>
-        </classes>
-    </test>
+<!--    <test name="PeriodProtectionDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PeriodProtectionDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PlasticBottlesOceanReward proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PlasticBottlesOceanReward"/>
-        </classes>
-    </test>
+<!--    <test name="PlasticBottlesOceanReward proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PlasticBottlesOceanReward"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PlasticStrawAlternativesArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PlasticStrawAlternativesArticle"/>
-        </classes>
-    </test>
+<!--    <test name="PlasticStrawAlternativesArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PlasticStrawAlternativesArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="PrideKnowledgeQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.PrideKnowledgeQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="PrideKnowledgeQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.PrideKnowledgeQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="ProtectForestsArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.ProtectForestsArticle"/>
-        </classes>
-    </test>
+<!--    <test name="ProtectForestsArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.ProtectForestsArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="RandomActsOfKindnessArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.RandomActsOfKindnessArticle"/>
-        </classes>
-    </test>
+<!--    <test name="RandomActsOfKindnessArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.RandomActsOfKindnessArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="RuralTennesseeVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.RuralTennesseeVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="RuralTennesseeVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.RuralTennesseeVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SafeSpaceArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SafeSpaceArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SafeSpaceArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SafeSpaceArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SeaLionMedicineDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SeaLionMedicineDonation"/>
-        </classes>
-    </test>
+<!--    <test name="SeaLionMedicineDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SeaLionMedicineDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SecondTenMealsDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SecondTenMealsDonation"/>
-        </classes>
-    </test>
+<!--    <test name="SecondTenMealsDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SecondTenMealsDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SeeEqualQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SeeEqualQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="SeeEqualQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SeeEqualQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SevenRecyclingTipsArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SevenRecyclingTipsArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SevenRecyclingTipsArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SevenRecyclingTipsArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SevenWaysEqualWorldArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SevenWaysEqualWorldArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SevenWaysEqualWorldArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SevenWaysEqualWorldArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SmallActionsAtHomeArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SmallActionsAtHomeArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SmallActionsAtHomeArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SmallActionsAtHomeArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SuperheroQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SuperheroQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="SuperheroQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SuperheroQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SupportAccessDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SupportAccessDonation"/>
-        </classes>
-    </test>
+<!--    <test name="SupportAccessDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SupportAccessDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SupportCommunityArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SupportCommunityArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SupportCommunityArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SupportCommunityArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SustainabilityQuiz proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SustainabilityQuiz"/>
-        </classes>
-    </test>
+<!--    <test name="SustainabilityQuiz proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SustainabilityQuiz"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SustainableAtHomeArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SustainableAtHomeArticle"/>
-        </classes>
-    </test>
+<!--    <test name="SustainableAtHomeArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SustainableAtHomeArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SweepStakes proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.SweepStakes"/>
-        </classes>
-    </test>
+<!--    <test name="SweepStakes proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.SweepStakes"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TakeOnRaceSetAsMyCause proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TakeOnRaceSetAsMyCause"/>
-        </classes>
-    </test>
+<!--    <test name="TakeOnRaceSetAsMyCause proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TakeOnRaceSetAsMyCause"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TenMealsDonation proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TenMealsDonation"/>
-        </classes>
-    </test>
+<!--    <test name="TenMealsDonation proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TenMealsDonation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TenWaysToExpressGratitudeArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TenWaysToExpressGratitudeArticle"/>
-        </classes>
-    </test>
+<!--    <test name="TenWaysToExpressGratitudeArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TenWaysToExpressGratitudeArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TheNameVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TheNameVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="TheNameVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TheNameVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TokyoPodiumVideoArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TokyoPodiumVideoArticle"/>
-        </classes>
-    </test>
+<!--    <test name="TokyoPodiumVideoArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TokyoPodiumVideoArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="TotalActsOfGoodPage proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.TotalActsOfGoodPage"/>
-        </classes>
-    </test>
+<!--    <test name="TotalActsOfGoodPage proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.TotalActsOfGoodPage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="UnitedWaySetAsMyCause proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.UnitedWaySetAsMyCause"/>
-        </classes>
-    </test>
+<!--    <test name="UnitedWaySetAsMyCause proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.UnitedWaySetAsMyCause"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="VirginPlasticArticle proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.VirginPlasticArticle"/>
-        </classes>
-    </test>
+<!--    <test name="VirginPlasticArticle proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.VirginPlasticArticle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="WhereToShop proctorandgamble">
-        <classes>
-            <class name="apps.proctorandgamble.WhereToShop"/>
-        </classes>
-    </test>
+<!--    <test name="WhereToShop proctorandgamble">-->
+<!--        <classes>-->
+<!--            <class name="apps.proctorandgamble.WhereToShop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
