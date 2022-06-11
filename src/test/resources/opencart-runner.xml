@@ -1,15 +1,288 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="opencart smoke opencart">
-    <parameter name="url" value="https://opencart.com/"></parameter>
+<suite name="Open cart testing">
+    <parameter name="url" value="https://www.opencart.com/index.php?route=common/home"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="mac"></parameter>
-    <!--    <test name="HomepageTest opencart">-->
-    <!--        <classes>-->
-    <!--            <class name="apps.HomepageTest.opencart"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
 
+
+
+    <test name="AddmacbookTest opencart">
+        <classes>
+            <class name="apps.opencart.AddmacbookTest"/>
+        </classes>
+    </test>
+
+
+    <test name="DemoTest opencart">
+        <classes>
+            <class name="apps.opencart.DemoTest"/>
+        </classes>
+    </test>
+
+    <test name="DownloadsTest opencart">
+        <classes>
+            <class name="apps.opencart.DownloadsTest"/>
+        </classes>
+    </test>
+
+
+    <test name="FeatureaddTest opencart">
+        <classes>
+            <class name="apps.opencart.FeatureaddTest"/>
+        </classes>
+    </test>
+
+
+    <test name="FeatureTest opencart">
+        <classes>
+            <class name="apps.opencart.FeatureTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Freedownloadadd1Test opencart">
+        <classes>
+            <class name="apps.opencart.Freedownloadadd1Test"/>
+        </classes>
+    </test>
+
+    <test name="Freedownloadadd2 opencart">
+        <classes>
+            <class name="apps.opencart.Freedownloadadd2"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Freedownloadadd3 opencart">
+        <classes>
+            <class name="apps.opencart.Freedownloadadd3"/>
+        </classes>
+    </test>
+
+
+    <test name="Freedownloadadd4Test opencart">
+        <classes>
+            <class name="apps.opencart.Freedownloadadd4"/>
+        </classes>
+    </test>
+
+
+    <test name="Freedownloadadd5 opencart">
+        <classes>
+            <class name="apps.opencart.Freedownloadadd5"/>
+        </classes>
+    </test>
+
+    <test name="FreedownloadaddTest opencart">
+        <classes>
+            <class name="apps.opencart.FreedownloadaddTest"/>
+        </classes>
+    </test>
+
+    <test name="Freedownload opencart">
+        <classes>
+            <class name="apps.opencart.FreedownloadTest"/>
+        </classes>
+    </test>
+
+    <test name="HomepageTest opencart">
+        <classes>
+            <class name="apps.opencart.HomepageTest"/>
+        </classes>
+    </test>
+
+
+
+    <test name="LoginTest opencart">
+        <classes>
+            <class name="apps.opencart.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Marketpalcecheck3 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck3"/>
+        </classes>
+    </test>
+
+    <test name="Marketpalcecheck8 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck8"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Marketpalcecheck9 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck9"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketpalcecheck10 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck10"/>
+        </classes>
+    </test>
+
+    <test name="Marketpalcecheck11 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck11"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Marketpalcecheck12 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck12"/>
+        </classes>
+    </test>
+
+    <test name="Marketpalcecheck13 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck13"/>
+        </classes>
+    </test>
+
+    <test name="Marketpalcecheck14 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck14"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Marketpalcecheck15 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck15"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketpalcecheck16 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheck16"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketpalcecheck2 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecheek2"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketpalcecommercial opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecommercial"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketpalcecommercial1 opencart">
+        <classes>
+            <class name="apps.opencart.Marketpalcecommercial1"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketplacecheck1Test opencart">
+        <classes>
+            <class name="apps.opencart.Marketplacecheck1Test"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketplacecheck4 opencart">
+        <classes>
+            <class name="apps.opencart.Marketplacecheck4"/>
+        </classes>
+    </test>
+
+
+    <test name="Marketplacecheck5 opencart">
+        <classes>
+            <class name="apps.opencart.Marketplacecheck5"/>
+        </classes>
+    </test>
+
+    <test name="Marketplacecheck6 opencart">
+        <classes>
+            <class name="apps.opencart.Marketplacecheck6"/>
+        </classes>
+    </test>
+
+
+
+
+    <test name="Marketplace7 opencart">
+        <classes>
+            <class name="apps.opencart.Marketplacecheck7"/>
+        </classes>
+    </test>
+
+    <test name="MarketplaceTest opencart">
+        <classes>
+            <class name="apps.opencart.MarketplaceTest"/>
+        </classes>
+    </test>
+
+
+    <test name="RegisterinfoTest opencart">
+        <classes>
+            <class name="apps.opencart.RegisterinfoTest"/>
+        </classes>
+    </test>
+
+
+
+    <test name="RegisterTest opencart">
+        <classes>
+            <class name="apps.opencart.RegisterTest"/>
+        </classes>
+    </test>
+
+
+
+    <test name="ResourcesTest opencart">
+        <classes>
+            <class name="apps.opencart.ResourcesTest"/>
+        </classes>
+    </test>
+
+    <test name="SearchTest opencart">
+        <classes>
+            <class name="apps.opencart.SearchTest"/>
+        </classes>
+    </test>
+
+
+    <test name="ViewdemoTest opencart">
+        <classes>
+            <class name="apps.opencart.ViewdemoTest"/>
+        </classes>
+    </test>
+
+
+
+    <test name="VlogaddTest opencart">
+        <classes>
+            <class name="apps.opencart.VlogaddTest"/>
+        </classes>
+    </test>
+
+
+    <test name="VlogTest opencart">
+        <classes>
+            <class name="apps.opencart.VlogTest"/>
+        </classes>
+    </test>
 
 </suite>
+
