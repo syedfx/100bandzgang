@@ -4,7 +4,7 @@
 <suite name="lambda test">
     <parameter name="url" value="https://www.lambdatest.com/automation-testing"></parameter>
     <parameter name="browser" value="chrome"></parameter>
-    <parameter name="os" value="windows"></parameter>
+    <parameter name="os" value="mac"></parameter>
 
     <test name="api lambda">
         <classes>
