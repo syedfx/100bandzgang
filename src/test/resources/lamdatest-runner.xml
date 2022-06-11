@@ -1,15 +1,262 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="opencart smoke opencart">
-    <parameter name="url" value="https://lambdatest.com/"></parameter>
+<suite name="lambda test">
+    <parameter name="url" value="https://www.lambdatest.com/automation-testing"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="mac"></parameter>
-    <!--    <test name="HomepageTest opencart">-->
-    <!--        <classes>-->
-    <!--            <class name="apps.HomepageTest.lamdatest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+
+    <test name="api lambda">
+        <classes>
+            <class name="apps.lamdatest.Api"/>
+        </classes>
+    </test>
+
+    <test name="api2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Api2"/>
+        </classes>
+    </test>
+
+    <test name="blog lambda">
+        <classes>
+            <class name="apps.lamdatest.Blog"/>
+        </classes>
+    </test>
+
+    <test name="bookdemo lambda">
+        <classes>
+            <class name="apps.lamdatest.Bookdemo"/>
+        </classes>
+    </test>
+
+    <test name="certification lambda">
+        <classes>
+            <class name="apps.lamdatest.Certification"/>
+        </classes>
+    </test>
+
+    <test name="community2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Community2"/>
+        </classes>
+    </test>
+
+    <test name="contactus lambda">
+        <classes>
+            <class name="apps.lamdatest.Contactus"/>
+        </classes>
+    </test>
+
+    <test name="customerstory lambda">
+        <classes>
+            <class name="apps.lamdatest.Customerstory"/>
+        </classes>
+    </test>
+
+    <test name="developers lambda">
+        <classes>
+            <class name="apps.lamdatest.Developers"/>
+        </classes>
+    </test>
+
+    <test name="documentation lambda">
+        <classes>
+            <class name="apps.lamdatest.Documentation"/>
+        </classes>
+    </test>
+
+    <test name="documentation2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Documentation2"/>
+        </classes>
+    </test>
+
+    <test name="emailandphone lambda">
+        <classes>
+            <class name="apps.lamdatest.Emailandphone"/>
+        </classes>
+    </test>
+
+    <test name="enterprise lambda">
+        <classes>
+            <class name="apps.lamdatest.Enterprise"/>
+        </classes>
+    </test>
+
+    <test name="forgot lambda">
+        <classes>
+            <class name="apps.lamdatest.Forgot"/>
+        </classes>
+    </test>
+
+    <test name="form lambda">
+        <classes>
+            <class name="apps.lamdatest.Form"/>
+        </classes>
+    </test>
+
+    <test name="github lambda">
+        <classes>
+            <class name="apps.lamdatest.Githubs"/>
+        </classes>
+    </test>
+
+    <test name="homepage lambda">
+        <classes>
+            <class name="apps.lamdatest.Homepage"/>
+        </classes>
+    </test>
+
+    <test name="hover lambda">
+        <classes>
+            <class name="apps.lamdatest.Hover"/>
+        </classes>
+    </test>
+
+    <test name="hover2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Hover2"/>
+        </classes>
+    </test>
+
+    <test name="hover3 lambda">
+        <classes>
+            <class name="apps.lamdatest.Hover3"/>
+        </classes>
+    </test>
+
+    <test name="hover4 lambda">
+        <classes>
+            <class name="apps.lamdatest.Hover4"/>
+        </classes>
+    </test>
+
+    <test name="hover5 lambda">
+        <classes>
+            <class name="apps.lamdatest.Hover5"/>
+        </classes>
+    </test>
+
+    <test name="learninghub lambda">
+        <classes>
+            <class name="apps.lamdatest.Learninghub"/>
+        </classes>
+    </test>
+
+    <test name="mobibleapp lambda">
+        <classes>
+            <class name="apps.lamdatest.Mobileapp"/>
+        </classes>
+    </test>
+
+    <test name="mobibleapp2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Mobileapp2"/>
+        </classes>
+    </test>
+
+    <test name="newsletter lambda">
+        <classes>
+            <class name="apps.lamdatest.Newsletter"/>
+        </classes>
+    </test>
+
+    <test name="newsletter2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Newsletter2"/>
+        </classes>
+    </test>
+
+    <test name="pricing lambda">
+        <classes>
+            <class name="apps.lamdatest.Pricing"/>
+        </classes>
+    </test>
+
+    <test name="realweb lambda">
+        <classes>
+            <class name="apps.lamdatest.Realweb"/>
+        </classes>
+    </test>
+
+    <test name="realwebtest2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Realwebbtest2"/>
+        </classes>
+    </test>
+
+    <test name="register lambda">
+        <classes>
+            <class name="apps.lamdatest.Register"/>
+        </classes>
+    </test>
+
+    <test name="reset lambda">
+        <classes>
+            <class name="apps.lamdatest.Reset"/>
+        </classes>
+    </test>
+
+    <test name="resource lambda">
+        <classes>
+            <class name="apps.lamdatest.Resource"/>
+        </classes>
+    </test>
+
+    <test name="searchtest lambda">
+        <classes>
+            <class name="apps.lamdatest.SearchTest"/>
+        </classes>
+    </test>
+
+    <test name="seleniumgrid lambda">
+        <classes>
+            <class name="apps.lamdatest.Seleniumgrid"/>
+        </classes>
+    </test>
+
+    <test name="sendmessage lambda">
+        <classes>
+            <class name="apps.lamdatest.Sendmessage"/>
+        </classes>
+    </test>
+
+    <test name="starttrialtest lambda">
+        <classes>
+            <class name="apps.lamdatest.Starttrialtest"/>
+        </classes>
+    </test>
+
+    <test name="video lambda">
+        <classes>
+            <class name="apps.lamdatest.Video"/>
+        </classes>
+    </test>
+
+    <test name="webiners lambda">
+        <classes>
+            <class name="apps.lamdatest.Webiners"/>
+        </classes>
+    </test>
+
+    <test name="writeforus lambda">
+        <classes>
+            <class name="apps.lamdatest.Writeforus"/>
+        </classes>
+    </test>
+
+    <test name="writeforus2 lambda">
+        <classes>
+            <class name="apps.lamdatest.Writeforus2"/>
+        </classes>
+    </test>
+
+    <test name="writeforus3 lambda">
+        <classes>
+            <class name="apps.lamdatest.Writeforus3"/>
+        </classes>
+    </test>
 
 
 </suite>
