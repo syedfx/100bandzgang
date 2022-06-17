@@ -13,10 +13,10 @@ public class AddToCartTest extends CommonAPI {
         waitFor(2);
         driver.findElement(By.cssSelector("input[type='text']")).sendKeys("snake");
         waitFor(2);
-        driver.findElement(By.cssSelector("input[type='submit']")).click();
+        click("input[type='submit']");
         waitFor(2);
-        driver.findElement(By.cssSelector("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']")).click();
+        click("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']");
         waitFor(2);
-        driver.findElement(By.cssSelector("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-11']")).click();
+        click("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-11']");
     }
 }

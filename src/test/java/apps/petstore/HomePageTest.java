@@ -15,6 +15,7 @@ public class HomePageTest extends CommonAPI {
 
     @Test
     public void CatalogPage() {
+
         driver.findElement(By.cssSelector("a[href='actions/Catalog.action']")).click();
     }
 

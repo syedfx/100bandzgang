@@ -16,9 +16,9 @@ public class ProceedToCheckOut extends CommonAPI {
         waitFor(1);
         driver.findElement(By.cssSelector("input[type='submit']")).click();
         waitFor(1);
-        driver.findElement(By.cssSelector("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']")).click();
+        click("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']");
         waitFor(1);
-        driver.findElement(By.cssSelector("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-11']")).click();
+        click("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-11']");
         waitFor(1);
         driver.findElement(By.xpath("//*[@id=\"Cart\"]/a")).click();
 

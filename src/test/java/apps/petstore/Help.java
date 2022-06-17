@@ -10,7 +10,7 @@ public class Help extends CommonAPI {
 
         driver.findElement(By.cssSelector("a[href='actions/Catalog.action']")).click();
         driver.findElement(By.cssSelector("input[type='text']")).click();
-        driver.findElement(By.cssSelector("input[type='text']")).click();
+        click("input[type='text']");
         waitFor(2);
         driver.findElement(By.cssSelector("a[href='../help.html']")).click();
 

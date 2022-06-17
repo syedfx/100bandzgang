@@ -252,5 +252,12 @@
         </classes>
     </test>
 
+    <test name="GetText petstore">
+        <classes>
+            <class name="apps.petstore.GetText"/>
+        </classes>
+    </test>
+
+
 
 </suite>
