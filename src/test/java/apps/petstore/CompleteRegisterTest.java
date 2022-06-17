@@ -8,10 +8,10 @@ public class CompleteRegisterTest extends CommonAPI {
     @Test
     public void RegisterNow() {
 
-        driver.findElement(By.cssSelector("a[href='actions/Catalog.action']")).click();
+        click("a[href='actions/Catalog.action']");
         driver.findElement(By.cssSelector("input[type='text']")).click();
-        driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]")).click();
-        driver.findElement(By.xpath("//*[@id=\"Catalog\"]/a")).click();
+        click("//*[@id=\"MenuContent\"]/a[2]");
+        click("//*[@id=\"Catalog\"]/a");
         driver.findElement(By.cssSelector("input[name='username']")).sendKeys("abc123");
         driver.findElement(By.cssSelector("input[name='password']")).sendKeys("12345");
         driver.findElement(By.cssSelector("input[name='account.firstName']")).sendKeys("Zimu");
@@ -24,7 +24,7 @@ public class CompleteRegisterTest extends CommonAPI {
         driver.findElement(By.cssSelector("input[name='account.state']")).sendKeys("NY");
         driver.findElement(By.cssSelector("input[name='account.zip']")).sendKeys("12345");
         driver.findElement(By.cssSelector("input[name='account.country']")).sendKeys("USA");
-        driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
+        click("//*[@id=\"Catalog\"]/form/input");
 
 
     }

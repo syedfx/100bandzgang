@@ -14,7 +14,7 @@ public class SearchDetailsTest extends CommonAPI {
         driver.findElement(By.cssSelector("input[type='text']")).click();
         driver.findElement(By.cssSelector("input[type='text']")).sendKeys("snake");
         driver.findElement(By.cssSelector("input[type='submit']")).click();
-        driver.findElement(By.cssSelector("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']")).click();
+        click("a[href='/actions/Catalog.action?viewProduct=&productId=RP-SN-01']");
     }
 
 }

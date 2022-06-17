@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 public class CatalogPageTest extends CommonAPI {
     @Test
     public void CatalogPage() {
-        driver.findElement(By.cssSelector("a[href='actions/Catalog.action']")).click();
+
+        click("a[href='actions/Catalog.action']");
     }
 }

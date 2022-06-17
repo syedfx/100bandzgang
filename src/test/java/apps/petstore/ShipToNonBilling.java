@@ -20,12 +20,12 @@ public class ShipToNonBilling extends CommonAPI {
         driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
         driver.findElement(By.xpath("//*[@id=\"QuickLinks\"]/a[5]/img")).click();
         driver.findElement(By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[2]/td[1]/a")).click();
-        driver.findElement(By.cssSelector("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-18']")).click();
+        click("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-18']");
         driver.findElement(By.xpath("//*[@id=\"Cart\"]/a")).click();
         waitFor(1);
         driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/table/tbody/tr[2]/td[2]/select")).click();
         waitFor(1);
-        driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/table/tbody/tr[2]/td[2]/select/option[3]")).click();
+        click("//*[@id=\"Catalog\"]/form/table/tbody/tr[2]/td[2]/select/option[3]");
         waitFor(1);
         driver.findElement(By.cssSelector("input[name='order.creditCard']")).clear();
         waitFor(1);

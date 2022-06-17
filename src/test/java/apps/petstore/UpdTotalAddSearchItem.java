@@ -20,7 +20,7 @@ public class UpdTotalAddSearchItem extends CommonAPI {
         driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
         driver.findElement(By.xpath("//*[@id=\"QuickLinks\"]/a[5]/img")).click();
         driver.findElement(By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[2]/td[1]/a")).click();
-        driver.findElement(By.cssSelector("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-18']")).click();
+        click("a[href='/actions/Cart.action?addItemToCart=&workingItemId=EST-18']");
         waitFor(1);
         driver.findElement(By.cssSelector("input[name='EST-18']")).clear();
         waitFor(1);

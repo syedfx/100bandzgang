@@ -10,9 +10,9 @@ public class CreateAccountTest extends CommonAPI {
     public void ValidRegister() {
 
         driver.findElement(By.cssSelector("a[href='actions/Catalog.action']")).click();
-        driver.findElement(By.cssSelector("input[type='text']")).click();
-        driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]")).click();
-        driver.findElement(By.xpath("//*[@id=\"Catalog\"]/a")).click();
+        click("input[type='text']");
+        click("//*[@id=\"MenuContent\"]/a[2]");
+        click("//*[@id=\"Catalog\"]/a");
         driver.findElement(By.cssSelector("input[name='username']")).sendKeys("TigerKing");
         driver.findElement(By.cssSelector("input[name='password']")).sendKeys("exotic");
         driver.findElement(By.cssSelector("input[name='repeatedPassword']")).sendKeys("exotic");
