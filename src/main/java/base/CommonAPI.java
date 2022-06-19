@@ -1,18 +1,35 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import reporting.ExtentManager;
+import reporting.ExtentTestManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.*;
 
 public class CommonAPI {
 
@@ -20,6 +37,63 @@ public class CommonAPI {
 
     public WebDriver driver;
 
+    public static com.relevantcodes.extentreports.ExtentReports extent;
+
+    @BeforeSuite
+    public void extentSetup(ITestContext context) {
+        ExtentManager.setOutputDirectory(context);
+        extent = ExtentManager.getInstance();
+    }
+    @BeforeMethod
+    public void startExtent(Method method) {
+        String className = method.getDeclaringClass().getSimpleName();
+        String methodName = method.getName().toLowerCase();
+        ExtentTestManager.startTest(method.getName());
+        ExtentTestManager.getTest().assignCategory(className);
+    }
+    protected String getStackTrace(Throwable t) {
+        StringWriter sw = new StringWriter();
+        PrintWriter pw = new PrintWriter(sw);
+        t.printStackTrace(pw);
+        return sw.toString();
+    }
+
+    @AfterMethod
+    public void afterEachTestMethod(ITestResult result) {
+        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
+        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
+
+        for (String group : result.getMethod().getGroups()) {
+            ExtentTestManager.getTest().assignCategory(group);
+        }
+
+        if (result.getStatus() == 1) {
+            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
+        } else if (result.getStatus() == 2) {
+            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
+        } else if (result.getStatus() == 3) {
+            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+        }
+        ExtentTestManager.endTest();
+        extent.flush();
+      //  if (takeScreenshot.equalsIgnoreCase("true")) {
+            if (result.getStatus() == ITestResult.FAILURE) {
+                takeScreenshot(result.getName());
+            }
+     //   }
+        driver.quit();
+    }
+
+    @AfterSuite
+    public void generateReport() {
+        extent.close();
+    }
+
+    private Date getTime(long millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(millis);
+        return calendar.getTime();
+    }
     public void getDriver(String browser, String os){
         if (os.equalsIgnoreCase("windows")){
             if (browser.equalsIgnoreCase("chrome")){
@@ -47,11 +121,36 @@ public class CommonAPI {
             }
         }
     }
+    public void getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String osVersion, String browser, String browserVersion) throws MalformedURLException {
+        DesiredCapabilities cap = new DesiredCapabilities();
 
-    @Parameters({"url","browser","os"})
+        cap.setCapability("os",os);
+        cap.setCapability("os_version",osVersion);
+        cap.setCapability("browser",browser);
+        cap.setCapability("browser_version",browserVersion);
+        if (envName.equalsIgnoreCase("saucelabs")) {
+            driver = new RemoteWebDriver(new URL("http://"+envUsername+":"+envAccessKey+"@ondemand.saucelabs.com:80/wd/hub"), cap);
+        }else if (envName.equalsIgnoreCase("browserstack")){
+            driver = new RemoteWebDriver(new URL("http://"+envUsername+":"+envAccessKey+"@hub-cloud.browserstack.com:80/wd/hub"), cap);
+
+        }
+    }
+
+    @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
     @BeforeMethod
-    public void setUp(@Optional("https://www.google.com/") String url, @Optional("chrome") String browser, @Optional("windows") String os){
-        getDriver(browser, os);
+    public void setUp(@Optional ("false") boolean useCloudEnv, @Optional ("browserstack") String envName, @Optional("windows")
+            String os, @Optional ("10") String osVersion, @Optional("chrome") String browserName, @Optional ("101")
+            String browserVersion, @Optional("https://www.google.com/") String url) throws MalformedURLException {
+        if (useCloudEnv) {
+            if (envName.equalsIgnoreCase("browserstack")) {
+                getCloudDriver(envName,"syednazrul_nj0fCA","gjh6nnymgrjLWexq8REs", os, osVersion, browserName, browserVersion);
+            }else if (envName.equalsIgnoreCase("saucelabs")) {
+                getCloudDriver(envName,"","", os, osVersion, browserName, browserVersion);
+            }
+        }else {
+            getDriver(browserName,os);
+        }
+
         driver.manage().window().maximize();
         driver.get(url);
     }
@@ -80,6 +179,12 @@ public class CommonAPI {
             driver.findElement(By.xpath(locator)).click();
         }
     }
+
+
+    public void click(WebElement element){
+        element.click();
+    }
+
 
     public void type(String locator, String text){
         try {
@@ -126,6 +231,21 @@ public class CommonAPI {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void takeScreenshot(String screenshotName){
+        DateFormat df = new SimpleDateFormat("MMddyyyyHHmma");
+        Date date = new Date();
+        df.format(date);
+
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "\\screenshots\\"+screenshotName+" "+df.format(date)+".jpeg"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            String path = System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".jpeg";
+            System.out.println("Exception while taking screenshot "+e.getMessage());
         }
     }
 }
