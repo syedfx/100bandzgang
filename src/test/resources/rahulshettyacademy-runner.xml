@@ -199,9 +199,9 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-<!--    <test name="SearchJavaTopic rahulshettyacademy">-->
+<!--    <test name="SearchTest rahulshettyacademy">-->
 <!--        <classes>-->
-<!--            <class name="apps.rahulshettyacademy.SearchJavaTopic"/>-->
+<!--            <class name="apps.rahulshettyacademy.SearchTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 
@@ -241,11 +241,11 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-<!--    <test name="WhatsNewSelenium rahulshettyacademy">-->
-<!--        <classes>-->
-<!--            <class name="apps.rahulshettyacademy.WhatsNewSelenium"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="WhatsNewSelenium rahulshettyacademy">
+        <classes>
+            <class name="apps.rahulshettyacademy.WhatsNewSelenium"/>
+        </classes>
+    </test>
 
 
 
